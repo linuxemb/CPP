@@ -26,9 +26,9 @@ aptr2->print();
 	aptr2->print();
 	std::cout<<aptr.get()<<std::endl;        
 	std::cout<<aptr2.get()<<std::endl;   
-aptr.reset();
-std::cout<<	aptr.use_count()<< std::endl;
-std::cout<<	aptr2.use_count()<< std::endl;
+	aptr.reset();
+	std::cout<<	aptr.use_count()<< std::endl;
+	std::cout<<	aptr2.use_count()<< std::endl;
 	return 0;
 
 }
