@@ -1,23 +1,5 @@
-# CPP
-Modern cpp 
+bb-example
+==========
 
-----test result======
-
-~/git/CPP $./a.out 
-
-
-test::print
-test::print
-
-test::print
-
-0x63ac20
-
-0x63ac20
-
-0
-
-1
-
-
+Example Yocto/OpenEmbedded autotooled recipe, building an executable with a dependency on a shared library
 
