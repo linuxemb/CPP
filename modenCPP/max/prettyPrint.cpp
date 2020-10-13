@@ -43,8 +43,8 @@ public:
 };
 
 
-template<>
-
+//template<>
+/*
 class  PrettyPrint <std::vector<int>>
 {
 		std::vector<int> *m_pData;
@@ -64,6 +64,17 @@ public:
 		}
 
 };
+*/
+// Explicite only member function
+
+template<>
+void PrettyPrint<std::vector<int>>::Print() {
+		    std::cout << "{" ;
+			for (const auto &x : *m_pData) {
+					std::cout << x;
+			}
+			std::cout  << "}" << std::endl;
+		}
 
 
 int main()
