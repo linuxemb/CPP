@@ -58,3 +58,11 @@ int main()
 		return 0;
 
 }
+
+
+//==============output
+//./a.out 
+//{5}
+//{8.43}
+//{hello world}
+
