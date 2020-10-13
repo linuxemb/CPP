@@ -20,6 +20,7 @@ public:
 };
 
 // Explicite specialization for string types:q
+/*
 template<>
 
 class  PrettyPrint <char*>
@@ -39,7 +40,7 @@ public:
 
 };
 
-
+*/
 int main()
 {
 		int data = 5;
@@ -49,11 +50,11 @@ int main()
 		PrettyPrint<float> p2(&f);
 		p2.Print();
 		char *p { "hello world" };
-			// when use char* as template parameter then the type of T is T* , 	
+			//if without explicate specialization, need use p3(&p) when use char* as template parameter then the type of T is T* , 	
 //		PrettyPrint <char*> p3(p);  // ERROR "cant covert fron char* to char**
-		PrettyPrint <char*> p3(p);
+		PrettyPrint <char*> p3(&p);
 		p3.Print();
-	   char *pData = p3.GetData();
+	   char **pData = p3.GetData();
 		return 0;
 
 }
