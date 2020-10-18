@@ -1,0 +1,14 @@
+$ ./a.out 
+Integer(int)
+Integer(const Integer&)
+~Integer()
+~Integer()
+
+
+--------- interger class still has copy constrcotr invoked, as it has name 
+
+Integer(int)
+Integer(const Integer&)
+employee(std::string &&name, Interger &&id)
+~Integer()
+~Integer()
